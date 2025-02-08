@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: white;
+            height: 1000px;
+            width: 1000px;
+            display: grid;
+            /* grid-template-columns: 133px 133px 133px;
+            grid-template-rows: 133px 133px 133px; */
+            /* grid-template-columns: repeat(3,1fr);    fraction */
+            /* grid-template-rows: repeat(3,1fr); */
+            row-gap: 12px;
+            column-gap: 12px;
+        }
+        .item{
+            display: grid;
+            background-color: aqua;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(116, 116, 219);
+            text-align: center;
+        }
+        .item2{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            text-align: center;
+        }
+        .item3{
+            grid-row-start: 2;
+            grid-row-end:4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
+        .item4{
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: rgb(116, 116, 219);
+            text-align: center;
+        }
+        .item5{
+            grid-row-start: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+        }
+        .item6{ 
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            /* grid-column-end: 3; */
+            text-align: center;
+            background-color: rgb(116, 116, 219);
+        }
+        .item7{ 
+            grid-row-start: 2;
+            grid-column-start: 4;
+            text-align: center;
+        }
+        .item8{ 
+            grid-row-start: 3;
+            grid-column-start: 4;
+            background-color: rgb(116, 116, 219);
+            text-align: center;
+        }
+        .item9{ 
+            grid-row-start: 4;
+            grid-column-start: 4;
+            text-align: center;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Block 1</div>
+        <div class="item item2">Block 2</div>
+        <div class="item item3">Block 3</div>
+        <div class="item item4">Block 4</div>
+        <div class="item item5">Block 5</div>
+        <div class="item item6">Block 6</div>
+        <div class="item item7">Block 7</div>
+        <div class="item item8">Block 8</div>
+        <div class="item item9">Block 9</div>
+        
+      
+    </div>
+    
+</body>
+</html>
